@@ -1,0 +1,15 @@
+/* base styles */
+#header-nav {
+    background-color: gray;
+    border-radius: 0;
+    border: 0;
+}
+#header-nav h1 {
+    color: black;
+}
+
+#menu-item-1 {
+    height: 1000px;
+    background-color: #ccc;
+}
+

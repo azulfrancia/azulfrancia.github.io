@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    font-size: 16px;
+}
+
+/* BASE STYLES */
+
+/** header **/
+
+#header-nav {
+    background-color: gray;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    height: 80px;
+    padding: 0 20px;
+}
+
+.navbar-brand h1 {
+    color: black;
+    font-size: 2em;
+}
+
+#collapsable-nav {
+    border: none;
+}
+
+#collapsable-nav ul {
+    padding: 0;
+    background-color: lavender;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#collapsable-nav ul li:nth-child(1) {
+    border: 1px solid black;
+    margin-top: 0px;
+}
+
+#collapsable-nav ul li {
+    border: 1px solid black;
+    margin-top: -1px;
+    padding: 5px;
+}
+
+#collapsable-nav ul li a {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: dimgray;
+}
+
+#collapsable-nav ul li a:hover {
+    color: black;
+}
+
+/** body **/
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.8em;
+}
+
+.row section {
+    padding: 0 10px 20px 10px;
+}
+
+.menu-item {
+    position: relative;
+    background-color: #ccc;
+}
+
+.menu-item h3 {
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    text-size: 1.6em;
+}
+
+.menu-item p {
+    margin: 0;
+    padding: 10px;
+}
+
+.menu-item .back-to-top {
+    padding: 0 10px 10px 10px;
+}
+
+.menu-item p a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item p a:hover {
+    font-weight: 600;
+}
+
+/* RESPONSIVE DESIGN */
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    .row section {
+	padding: 0 20px 20px 20px;
+    }
+}
