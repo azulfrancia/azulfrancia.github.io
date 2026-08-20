@@ -1,0 +1,54 @@
+/* =========================================
+   MI DÍA DE ESTUDIO
+   ========================================= */
+
+/* Estilo base de cada tarjeta de actividad */
+.actividad {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 16px auto;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    /* transición suave para el efecto al pasar el mouse */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Al pasar el mouse, la tarjeta se eleva un poco */
+.actividad:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* La hora se destaca más que la materia */
+.actividad h2 {
+    font-size: 1.4rem;
+    margin: 0 0 4px 0;
+}
+
+.actividad p {
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+}
+
+/* Colores disponibles para las actividades */
+.azul {
+    background-color: #CDE7FF;
+}
+
+.verde {
+    background-color: #D5F2D0;
+}
+
+.rosa {
+    background-color: #FFD6E8;
+}
+
+/* Diseño responsive básico: en pantallas chicas, la tarjeta ocupa todo el ancho */
+@media (max-width: 500px) {
+    .actividad {
+        max-width: 100%;
+    }
+}

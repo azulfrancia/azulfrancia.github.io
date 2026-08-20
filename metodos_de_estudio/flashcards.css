@@ -1,0 +1,49 @@
+/* =========================================
+   FLASHCARDS
+   ========================================= */
+
+.flashcard {
+    max-width: 420px;
+    margin: 0 auto 20px auto;
+    padding: 30px 24px;
+    border-radius: 16px;
+    background-color: #F1EAFB;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* transición suave para cuando cambia la sombra y el tamaño */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.flashcard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.flashcard h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* La respuesta (el <p>) empieza INVISIBLE:
+   opacity 0 la oculta, y le damos una altura de 0 para que no ocupe espacio */
+.flashcard p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    color: #6B3FA0;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    /* transición suave: la respuesta va a "aparecer" de a poco */
+    transition: opacity 0.3s ease, max-height 0.3s ease, margin 0.3s ease;
+}
+
+/* Cuando el mouse pasa sobre .flashcard, buscamos el <p> que está adentro
+   y le cambiamos la opacidad a 1: así se hace visible */
+.flashcard:hover p {
+    opacity: 1;
+    max-height: 100px;
+    margin-top: 14px;
+}
